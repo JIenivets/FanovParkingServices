@@ -1,0 +1,22 @@
+.parc_cell{
+    float: left;
+    vertical-align: middle;
+    height: 100px;
+    width: 50px;
+    color: white;
+    background-color: #555;
+    border: 0px solid #000;
+    margin: 10px;
+    
+}
+
+.parc_row{
+    height: 180px;
+    min-width: 750px;
+    display:block;
+    border: 0px solid rgb(255, 0, 0);
+}
+
+.wrap {
+    display:inline-block;
+   }
