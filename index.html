@@ -1,32 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="geom.css">
+    <title>Парковочное место</title>
 </head>
 <body>
-    <h1 id="see"></h1>
+    <h1 id="see">Карта парковки</h1>
+    <div id='parking' style="width:device-width;border:5px solid #000;position:relative;text-align:center;min-width: 750px;">
+      	<div id='parking_row1' class="parc_row">
+			<div class="wrap">
+				<div class="parc_cell"><p>1</p></div>
+				<div class="parc_cell"><p>2</p></div>
+				<div class="parc_cell"><p>3</p></div>
+				<div class="parc_cell"><p>4</p></div>
+				<div class="parc_cell"><p>5</p></div>
+				<div class="parc_cell"><p>6</p></div>       
+				<div class="parc_cell"><p>7</p></div>       
+				<div class="parc_cell"><p>8</p></div>       
+				<div class="parc_cell"><p>9</p></div>       
+				<div class="parc_cell"><p>10</p></div>      
+			</div>
+		</div>
+      	<div id='parking_row2' class="parc_row">
+			<div class="wrap">
+				<div class="parc_cell"><p>11</p></div>
+				<div class="parc_cell"><p>12</p></div>
+				<div class="parc_cell"><p>13</p></div>
+				<div class="parc_cell"><p>14</p></div>
+				<div class="parc_cell"><p>15</p></div>
+				<div class="parc_cell"><p>16</p></div>       
+				<div class="parc_cell"><p>17</p></div>       
+				<div class="parc_cell"><p>18</p></div>       
+				<div class="parc_cell"><p>19</p></div>       
+				<div class="parc_cell"><p>20</p></div>      
+			</div>
+		</div>
+      	<div id='parking_row3' class="parc_row">
+			<div class="wrap">
+				<div class="parc_cell"><p>21</p></div>
+				<div class="parc_cell"><p>22</p></div>
+				<div class="parc_cell"><p>23</p></div>
+				<div class="parc_cell"><p>24</p></div>
+				<div class="parc_cell"><p>25</p></div>
+				<div class="parc_cell"><p>26</p></div>       
+				<div class="parc_cell"><p>27</p></div>       
+				<div class="parc_cell"><p>28</p></div>       
+				<div class="parc_cell"><p>29</p></div>       
+				<div class="parc_cell"><p>30</p></div>      
+			</div>
+		</div>
+    </div> 
 </body>
 </html>
 
 <script type="text/javascript">
+  let params = {};
   const url = window.location.search.substring(1);
   const utms = url.split("&")
   console.log(utms)
-
-  if (utms[0].includes('1')){
-    document.getElementById('see').innerHTML = "1 есть в id, а значит пишем 'Привет!'"
-  } else if (utms[0].includes('2')){
-    document.getElementById('see').innerHTML = "2 есть в id, а значит пишем 'Пока!'"
-    }
-
-  // тут я просто пробовал выводить все параметры из url
-  // for(let i =0; i <utms.length; i++){
-  //    console.log(utms[i])
-  //    document.getElementById('see').innerHTML += "\n"+utms[i]}
-
-
-
+  for (let i in utms){
+	  params[utms[i].slice(0, utms[i].indexOf('='))] = utms[i].slice(utms[i].indexOf('=')+1)
+  }
+  console.log(params)
+  document.getElementsByClassName('parc_cell')[Number(params['id'])-1].style.backgroundColor = 'green'
 </script>
