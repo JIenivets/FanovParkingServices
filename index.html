@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="see"></h1>
+</body>
+</html>
+
+<script type="text/javascript">
+  const url = window.location.search.substring(1);
+  const utms = url.split("&")
+  console.log(utms)
+
+  if (utms[0].includes('1')){
+    document.getElementById('see').innerHTML = "1 есть в id, а значит пишем 'Привет!'"
+  } else if (utms[0].includes('2')){
+    document.getElementById('see').innerHTML = "2 есть в id, а значит пишем 'Пока!'"
+    }
+
+  // тут я просто пробовал выводить все параметры из url
+  // for(let i =0; i <utms.length; i++){
+  //    console.log(utms[i])
+  //    document.getElementById('see').innerHTML += "\n"+utms[i]}
+
+
+
+</script>
