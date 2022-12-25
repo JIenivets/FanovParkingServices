@@ -57,7 +57,7 @@
 	<div>
 		<div>
 			<h3>Ваш qr-пропуск</h3>
-			<p>Отсканируйте его для проезда на парковку</p>
+			<p>Отсканируйте его у въезда для открытия шлагбаума на парковку</p>
 		</div>
 		<div>
 			<img src="" alt="qr code" id="code">
@@ -81,13 +81,4 @@
   qr.src = 'https://chart.googleapis.com/chart?cht=qr&chl=https://jienivets.github.io/FanovParkingServices/qrinfo.html?id='+params['id']+'&datetime='+ new Date() +'&chs=180x180&choe=UTF-8&chld=L|2'
   qr.style = 'width: 250px; height: 250px'
 
-  //if (utms[0].includes('1')){
-  //  document.getElementsByClassName('parc_cell')[Number()].style.backgroundColor = 'green'
-  //} else if (utms[0].includes('2')){
-  //  document.getElementById('see').innerHTML = "2 есть в id, а значит пишем 'Пока!'"
-  //  }
-  // тут я просто пробовал выводить все параметры из url
-  // for(let i =0; i <utms.length; i++){
-  //    console.log(utms[i])
-  //    document.getElementById('see').innerHTML += "\n"+utms[i]}
 </script>
