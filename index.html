@@ -54,7 +54,15 @@
 			</div>
 		</div>
     </div>
-	 
+	<div>
+		<div>
+			<h3>Ваш qr-пропуск</h3>
+			<p>Отсканируйте его для проезда на парковку</p>
+		</div>
+		<div>
+			<img src="" alt="qr code" id="code">
+		</div>
+	</div>
 </body>
 
 </html>
@@ -69,6 +77,9 @@
   }
   console.log(params)
   document.getElementsByClassName('parc_cell')[Number(params['id'])-1].style.backgroundColor = 'green'
+  const qr = document.getElementById('code')
+  qr.src = 'https://chart.googleapis.com/chart?cht=qr&chl=https://jienivets.github.io/FanovParkingServices/qrinfo.html?id='+params['id']+'&datetime='+ new Date() +'&chs=180x180&choe=UTF-8&chld=L|2'
+  qr.style = 'width: 250px; height: 250px'
 
   //if (utms[0].includes('1')){
   //  document.getElementsByClassName('parc_cell')[Number()].style.backgroundColor = 'green'

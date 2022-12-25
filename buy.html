@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="geom.css">
+    <title>Парковочное место</title>
+</head>
+
+<body>
+    <h1 id="see">Карта парковки</h1>
+    <div id='parking' style="width:device-width;border:5px solid #000;position:relative;text-align:center;min-width: 750px;">
+      	<div id='parking_row1' class="parc_row">
+			<div class="wrap">
+				<div class="parc_cell" id='cell1' select='0' onclick="selected_number(1);"><p>1</p></div>
+				<div class="parc_cell" id='cell2' select='0' onclick="selected_number(2);"><p>2</p></div>
+				<div class="parc_cell" id='cell3' select='0' onclick="selected_number(3);"><p>3</p></div>
+				<div class="parc_cell" id='cell4' select='0' onclick="selected_number(4);"><p>4</p></div>
+				<div class="parc_cell" id='cell5' select='0' onclick="selected_number(5);"><p>5</p></div>
+				<div class="parc_cell" id='cell6' select='0' onclick="selected_number(6);"><p>6</p></div>       
+				<div class="parc_cell" id='cell7' select='0' onclick="selected_number(7);"><p>7</p></div>       
+				<div class="parc_cell" id='cell8' select='0' onclick="selected_number(8);"><p>8</p></div>       
+				<div class="parc_cell" id='cell9' select='0' onclick="selected_number(9);"><p>9</p></div>       
+				<div class="parc_cell" id='cell10' select='0' onclick="selected_number(10);"><p>10</p></div>      
+			</div>
+		</div>
+      	<div id='parking_row2' class="parc_row">
+			<div class="wrap">
+				<div class="parc_cell" id='cell11' select='0' onclick="selected_number(11);"><p>11</p></div>
+				<div class="parc_cell" id='cell12' select='0' onclick="selected_number(12);"><p>12</p></div>
+				<div class="parc_cell" id='cell13' select='0' onclick="selected_number(13);"><p>13</p></div>
+				<div class="parc_cell" id='cell14' select='0' onclick="selected_number(14);"><p>14</p></div>
+				<div class="parc_cell" id='cell15' select='0' onclick="selected_number(15);"><p>15</p></div>
+				<div class="parc_cell" id='cell16' select='0' onclick="selected_number(16);"><p>16</p></div>       
+				<div class="parc_cell" id='cell17' select='0' onclick="selected_number(17);"><p>17</p></div>       
+				<div class="parc_cell" id='cell18' select='0' onclick="selected_number(18);"><p>18</p></div>       
+				<div class="parc_cell" id='cell19' select='0' onclick="selected_number(19);"><p>19</p></div>       
+				<div class="parc_cell" id='cell20' select='0' onclick="selected_number(20);"><p>20</p></div>      
+			</div>
+		</div>
+      	<div id='parking_row3' class="parc_row">
+			<div class="wrap">
+				<div class="parc_cell" id='cell21' select='0' onclick="selected_number(21);"><p>21</p></div>
+				<div class="parc_cell" id='cell22' select='0' onclick="selected_number(22);"><p>22</p></div>
+				<div class="parc_cell" id='cell23' select='0' onclick="selected_number(23);"><p>23</p></div>
+				<div class="parc_cell" id='cell24' select='0' onclick="selected_number(24);"><p>24</p></div>
+				<div class="parc_cell" id='cell25' select='0' onclick="selected_number(25);"><p>25</p></div>
+				<div class="parc_cell" id='cell26' select='0' onclick="selected_number(26);"><p>26</p></div>       
+				<div class="parc_cell" id='cell27' select='0' onclick="selected_number(27);"><p>27</p></div>       
+				<div class="parc_cell" id='cell28' select='0' onclick="selected_number(28);"><p>28</p></div>       
+				<div class="parc_cell" id='cell29' select='0' onclick="selected_number(29);"><p>29</p></div>       
+				<div class="parc_cell" id='cell30' select='0' onclick="selected_number(30);"><p>30</p></div>      
+			</div>
+		</div>
+    </div>
+	<div>
+		<div>
+			<div class='wrap'>
+				<h3 id='text'>Выберите номер место</h3>
+			</div>
+		</div>
+		<div>
+			<div class='wrap'>
+				<button style="width: 100px; height: 35px;" onclick="moveToMap()">Купить</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+	const seleced_num = 0
+	let text = document.getElementById('text')
+	const text_choose = "Выберите номер место"
+
+	function selected_number(number){
+		console.log('Выбрано '+number+' место')
+		const obj = document.getElementById('cell'+number)
+		if (obj.getAttribute('select') == '0'){
+			//document.querySelectorAll('.parc_cell').style.backgroundColor = '#555'
+			obj.style.backgroundColor = 'green'
+			obj.setAttribute('select', '1')
+			text.innerText = 'Выбрано '+ number + ' место'
+			selected_num = number
+		} else if (obj.getAttribute('select') == '1'){
+			obj.style.backgroundColor = '#555'
+			obj.setAttribute('select', '0')
+		}
+	}
+
+	function moveToMap(){
+		location.href='https://jienivets.github.io/FanovParkingServices/?id='+selected_num
+	}
+
+
+</script>
