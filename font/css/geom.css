@@ -1,0 +1,239 @@
+body{
+    margin: 0%;
+}
+
+.parc_cell{
+    float: left;
+    vertical-align: middle;
+    height: 100px;
+    width: 50px;
+    color: white;
+    background-color: #555;
+    border: 0px solid #000;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.parc_row{
+    height: 120px;
+    width: 700px;
+    min-width: 700px;
+    display:block;
+    border: 0px solid rgb(255, 0, 0);
+}
+
+.arrow_row{
+    height: 100px;
+    
+}
+
+.parc_inout{
+    font-size: 25px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.wrap {
+    display:inline-block;
+   }
+
+.row {
+    display: flex;
+    flex-direction: row;
+ }
+
+.header{
+    background-color: #24444f;
+    height: 10%;
+    width: 100%;
+    position: sticky;
+    top: -1px;
+    margin: 0;
+    /* opacity: 0.9; */
+    z-index: 2;
+}
+
+.headerlogo{
+    height: 70px;
+    margin-left: 20px;
+    /* padding-top: 15px; */
+}
+
+.headername{
+    color: white;
+    font: 30px sans-serif;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.menu{
+    border: 0px solid white;
+    width: auto;
+}
+
+
+
+
+ul{
+    list-style: none;
+}
+li{
+    display: inline;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.welcomeblock{
+    background-color: white;
+    background-image: url(/font/assets/img/bgim.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.name{
+    display: inline;
+    font: 100px sans-serif;
+    color: white;
+    margin: 0;
+}
+.undername{
+    font-size: 35px;
+}
+
+.nameFPS{
+    display: inline;
+    font: 100px sans-serif;
+    color: #afffad;
+    padding-left: 20px;
+    margin: 0;
+}
+
+h3{
+    font: 50px sans-serif;
+    color: #555;
+}
+
+.buy_btn{
+    background-color: #00d732;
+    border: 0px;
+    height: 50px;
+    width: 190px;
+    border-radius: 15px;
+    color: #ffffff;
+    font: 20px sans-serif;
+    opacity: 0.9;
+
+}
+
+.centerdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parc_map{
+    border:5px solid #000;
+    align-items: none;
+    min-width: 900px;
+    background-color: white;
+}
+
+.parc_vertical_arrow{
+    height: 580px;
+    width: 100px;
+    margin: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.parc_horizontal_arrow{
+    text-align: center; /* Выравниваем текст по центру */
+    border-top: 10px dashed blue; /* Параметры линии  */
+    height: 18px; /* Высота блока */
+    background: no-repeat 10px -18px; /* Параметры фона */
+}
+#cell_number{
+    user-select: none;
+}
+
+#parc{
+    width: 700px;
+}
+
+#parc_horizontal_arrow_u1{
+    height: 45%;
+}
+#parc_horizontal_arrow_d1{
+    margin-top: 10px;
+    height: 45%;
+}
+#parc_horizontal_arrow_u2{
+    height: 45%;
+}
+#parc_horizontal_arrow_d2{
+    margin-top: 10px;
+    height: 45%;
+}
+#parc_vertical_arrow{
+    width: 10px;
+}
+#see{
+    font-size: 70px; 
+}
+#text{
+    font-size: 40px;
+}
+.cell_color{
+    width: 40px;
+    height: 20px;
+    background-color: aqua;
+    margin-right: 2%;
+    margin-bottom: 5px;
+}
+
+#free-place{
+    background-color: #555;
+}
+#selected-place{
+    background-color: green;
+}
+#booked-place{
+    background-color: #bd0202;
+}
+.arrow-symbol{
+    width: 40px;
+    height: 10px;
+    background-color: blue;
+    margin-top: 5px;
+    margin-right: 2%;
+}
+
+.sym{
+    margin: 0%;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.symbols-on-the-map{
+    margin-bottom: 50px; 
+}
+.inf{
+    margin: 0%;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+#your_pass{
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+#your_pass_info{
+    font-size: 25px;
+    margin-top: 0px;
+}
+#qrcode{
+    width: 250px;
+}
