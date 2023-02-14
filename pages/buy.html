@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../font/css/geom.css">
+    <link rel="stylesheet" href="../font/css/autoscale.css">
+	<link rel="shortcut icon" href="../font/assets/img/fps_logo__carx5v2.png">
+    <title>Парковочное место</title>
+	<script src="../js/header.js"></script>
+</head>
+<body style="margin: 0px;background-color: #ebfbe1;">
+	<header class="header"></header>
+	<div class="centerdiv">
+		<h3 id="see" style="margin: 5px;color: #000;"><strong>Карта парковки</strong></h3>
+	</div>
+
+
+
+    <div class='ParcMap_block parc_map centerdiv'id='parking'>
+		<!-- Вериткальная -->
+		<div class="parc_vertical_arrow">
+			<h3 class='parc_inout'>Выезд</h3>
+		</div>
+		<!-- Карта -->
+ 		<div id='parc' style="margin: 0px;">
+			<!-- Первый ряд парковки  -->
+			<div id='parking_row1' class="parc_row" >
+				<div class="wrap">
+					<div class="parc_cell" id='cell0' style="width: 0px;margin: 0;"></div>
+					<div class="parc_cell" id='cell1' select='0' onclick="selected_number(1);"><p id='cell_number'>1</p></div>
+					<div class="parc_cell" id='cell2' select='0' onclick="selected_number(2);"><p id='cell_number'>2</p></div>
+					<div class="parc_cell" id='cell3' select='0' onclick="selected_number(3);"><p id='cell_number'>3</p></div>
+					<div class="parc_cell" id='cell4' select='0' onclick="selected_number(4);"><p id='cell_number'>4</p></div>
+					<div class="parc_cell" id='cell5' select='0' onclick="selected_number(5);"><p id='cell_number'>5</p></div>
+					<div class="parc_cell" id='cell6' select='0' onclick="selected_number(6);"><p id='cell_number'>6</p></div>       
+					<div class="parc_cell" id='cell7' select='0' onclick="selected_number(7);"><p id='cell_number'>7</p></div>       
+					<div class="parc_cell" id='cell8' select='0' onclick="selected_number(8);"><p id='cell_number'>8</p></div>       
+					<div class="parc_cell" id='cell9' select='0' onclick="selected_number(9);"><p id='cell_number'>9</p></div>       
+					<div class="parc_cell" id='cell10' select='0' onclick="selected_number(10);"><p id='cell_number'>10</p></div>      
+				</div>
+			</div>
+			<!-- Первый проезд -->
+			<div class="arrow_row" style="display: flex;justify-content: flex-end;">
+				<div id="parc_horizontal_arrow1" style="background-color: blue;display: flex;justify-content: flex-end;flex-wrap: wrap;" >
+					<div id="parc_horizontal_arrow_u1" style="background-color: white;width: 100%;"></div>
+					<div id="parc_horizontal_arrow_d1" style="background-color: white;width: 100%"></div>
+				</div>
+			</div>
+			<!-- Второй ряд парковки -->
+			  <div id='parking_row2' class="parc_row">
+				<div class="wrap">
+					<div class="parc_cell" id='cell11' select='0' onclick="selected_number(11);"><p id='cell_number'>11</p></div>
+					<div class="parc_cell" id='cell12' select='0' onclick="selected_number(12);"><p id='cell_number'>12</p></div>
+					<div class="parc_cell" id='cell13' select='0' onclick="selected_number(13);"><p id='cell_number'>13</p></div>
+					<div class="parc_cell" id='cell14' select='0' onclick="selected_number(14);"><p id='cell_number'>14</p></div>
+					<div class="parc_cell" id='cell15' select='0' onclick="selected_number(15);"><p id='cell_number'>15</p></div>
+					<div class="parc_cell" id='cell16' select='0' onclick="selected_number(16);"><p id='cell_number'>16</p></div>       
+					<div class="parc_cell" id='cell17' select='0' onclick="selected_number(17);"><p id='cell_number'>17</p></div>       
+					<div class="parc_cell" id='cell18' select='0' onclick="selected_number(18);"><p id='cell_number'>18</p></div>       
+					<div class="parc_cell" id='cell19' select='0' onclick="selected_number(19);"><p id='cell_number'>19</p></div>       
+					<div class="parc_cell" id='cell20' select='0' onclick="selected_number(20);"><p id='cell_number'>20</p></div>      
+				</div>
+			</div>
+			<!-- Второй проезд -->
+			<div class="arrow_row" style="display: flex;justify-content: flex-end;">
+				<div id="parc_horizontal_arrow2" style="background-color: blue;display: flex;justify-content: flex-end;flex-wrap: wrap;" >
+					<div id="parc_horizontal_arrow_u2" style="background-color: white;width: 100%;"></div>
+					<div id="parc_horizontal_arrow_d2" style="background-color: white;width: 100%;"></div>
+				</div>
+			</div>
+			<!-- Третий ряд парковки  -->
+			  <div id='parking_row3' class="parc_row">
+				<div class="wrap">
+					<div class="parc_cell" id='cell21' select='0' onclick="selected_number(21);"><p id='cell_number'>21</p></div>
+					<div class="parc_cell" id='cell22' select='0' onclick="selected_number(22);"><p id='cell_number'>22</p></div>
+					<div class="parc_cell" id='cell23' select='0' onclick="selected_number(23);"><p id='cell_number'>23</p></div>
+					<div class="parc_cell" id='cell24' select='0' onclick="selected_number(24);"><p id='cell_number'>24</p></div>
+					<div class="parc_cell" id='cell25' select='0' onclick="selected_number(25);"><p id='cell_number'>25</p></div>
+					<div class="parc_cell" id='cell26' select='0' onclick="selected_number(26);"><p id='cell_number'>26</p></div>       
+					<div class="parc_cell" id='cell27' select='0' onclick="selected_number(27);"><p id='cell_number'>27</p></div>       
+					<div class="parc_cell" id='cell28' select='0' onclick="selected_number(28);"><p id='cell_number'>28</p></div>       
+					<div class="parc_cell" id='cell29' select='0' onclick="selected_number(29);"><p id='cell_number'>29</p></div>       
+					<div class="parc_cell" id='cell30' select='0' onclick="selected_number(30);"><p id='cell_number'>30</p></div>      
+				</div>
+			</div>
+		</div>
+		<!-- Вериткальная -->
+      	<div class="parc_vertical_arrow">
+			<div id="parc_vertical_arrow" style="background-color: blue;"></div>
+			<h3 class="parc_inout" id="left" style="margin-right: 0px;">Въезд</h3>
+		</div>
+
+    </div>
+
+
+
+	<div class="Buy_block">
+		<div style="width: 50%;margin-left: 20%;">
+			<div class="centerdiv" style="justify-content: left;">
+				<div class=''>
+					<h3 id='text' style="margin-bottom: 10px;">Количество свободных мест: </h3>
+				</div>
+				
+			</div>
+			<div class=''>
+				<h3 class="inf" ><strong>чтобы увидеть путь до места - нажмите на него</strong></h3>
+			</div>
+			<div class="centerdiv" style="justify-content: left;">
+				<div class='symbols-on-the-map' >
+					<h3 class='sym'id='text' >Условные обозначения:</h3>
+					<div class="symbols">
+						<div class="cell-symbol" >
+							<div class="row"><div class="cell_color" id="free-place"></div>
+							<div  id="free-place_text"> &mdash; свободное место;</div></div>
+							<div class="row"><div class="cell_color" id="selected-place"></div>
+							<div  id="selected-place_text">&mdash; выбранное место;</div></div>
+							<div class="row"><div class="cell_color" id="booked-place"></div>
+							<div  id="booked-place_text">&mdash; занятое место;</div></div>
+						</div>
+						<div class="arrow-symbols" style="display: flex; flex-wrap: wrap">
+							<div class="arrow-symbol"></div>
+							<div id="arrow_text"> &mdash; путь до места;</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="centerdiv" style="justify-content: left;">
+				<div class=''>
+					<button class="buy_btn"  onclick="buy()">Купить</button>
+				</div>
+			</div>
+
+
+			<div id="code" style="visibility: hidden">
+				<div>
+					<h3 id='your_pass'>Ваш пропуск</h3>
+					<h3 id='your_pass_info'>отсканируйте его при въезде и выезде</h3>
+					<!-- <h3 style="font-size: 15px;margin-top: 0px;margin-bottom: 25px;">*ещё какая-то инфа*</h3> -->
+				</div>
+				<div>
+					<img src="https://chart.googleapis.com/chart?cht=qr&chl=https://www.youtube.com/watch?v=dQw4w9WgXcQ&chs=180x180&choe=UTF-8&chld=L|2" alt="qr code" id="qrcode" style="display: none;">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<script src="../js/booked.js"></script>
+<script src="../js/buy.js"></script>
+<script src="../js/road_generator.js"></script>

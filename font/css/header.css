@@ -1,0 +1,28 @@
+
+.header{
+    background-color: #24444f;
+    /* height: 10%; */
+    width: 100%;
+    position: sticky;
+    top: -1px;
+    margin: 0;
+    opacity: 0.95;
+    z-index: 20;
+    user-select: none;
+
+}
+.headerlogo{
+    position: relative;
+    height: 70px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 22px;
+    /* padding-top: 15px; */
+}
+.headername{
+    content: 'Fanov Parking Services';
+    color: white;
+    font: 30px sans-serif;
+    padding-left: 15px;
+    padding-top: 10px;
+}
