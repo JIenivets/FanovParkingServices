@@ -26,3 +26,9 @@
     padding-left: 15px;
     padding-top: 10px;
 }
+
+@media screen and (max-width: 500px){
+    .headername{
+        content: 'FPS';
+    }
+}

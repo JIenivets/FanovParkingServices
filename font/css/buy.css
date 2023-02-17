@@ -1,0 +1,180 @@
+#see{
+    font-size: 70px; 
+}
+#text{
+    font-size: 40px;
+}
+#free-place{
+    background-color: #555;
+}
+#selected-place{
+    background-color: green;
+}
+#booked-place{
+    background-color: #bd0202;
+}
+.arrow-symbol{
+    width: 40px;
+    height: 10px;
+    background-color: blue;
+    margin-top: 5px;
+    margin-right: 2%;
+}
+
+.buy_btn{
+    background-color: #00d732;
+    border: 0px;
+    height: 70px;
+    width: 200px;
+    border-radius: 15px;
+    color: #ffffff;
+    font: 20px sans-serif;
+    opacity: 0.9;
+
+}
+
+.sym{
+    margin: 0%;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.symbols-on-the-map{
+    margin-bottom: 50px; 
+}
+.inf{
+    margin: 0%;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#free-place_text, #selected-place_text, #booked-place_text, #arrow-symbol_text{
+    font: 16px sans-serif;
+}
+
+#your_pass{
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+#your_pass_info{
+    font-size: 25px;
+    margin-top: 0px;
+}
+#qrcode{
+    width: 250px;
+}
+
+
+@media screen and (max-width: 500px) {
+    #see{
+        font-size: 30px;
+    }
+
+
+    .parc_map{
+        min-width: 100%;
+        height: 140px;
+    }
+    .parc_row{
+        width: 160px;
+        min-width: 160px;
+        height: 30px;
+    }
+    .parc_cell{
+        width: 12px;
+        height: 25px;
+        margin: 2px;
+    }
+    .parc_vertical_arrow{
+        height: 100%;
+        width: 25px;
+    }
+    .arrow_row{
+        height: 25px;
+        width: 160px;
+        margin: 0px;
+    }
+    .parc_inout{
+        font-size: 5px;
+    }
+    #left{
+        margin-left: 5px;
+    }
+    
+    #parc_horizontal_arrow_d1{
+        margin-top: 2px;
+        height: 47%;
+    }
+    
+    #parc_horizontal_arrow_d2{
+        margin-top: 2px;
+        height: 47%;
+    }
+    #parc{
+        width: 160px;
+    }
+    #cell_number{
+        margin-top: 4px;
+        font: 8px sans-serif;
+    }
+    #parc_vertical_arrow{
+        width: 2px;
+    }
+    #text{
+        font-size: 30px;
+    }
+    .parc_map{
+        border: 2px solid #000;
+    }
+    .buy_btn{
+        border-radius: 10px;
+        width: 150px;
+        height: 59px;
+    }
+    .sym{
+        margin: 0%;
+        font-size: 7px;
+        margin-bottom: 4px;
+    }
+    .cell_color{
+        width: 35px;
+        height: px;
+        background-color: aqua;
+        margin-right: 1%;
+        margin-bottom: 2px;
+    }
+    #free-place_text, #selected-place_text, #booked-place_text{
+        /* font-size: 5px; */
+        /* margin-right: 50%; */
+
+    }
+    .arrow-symbol{
+        width: 35px;
+        height: 9px;
+        background-color: blue;
+        margin-top: 2px;
+        margin-right: 2%;
+    }
+    #arrow_text{
+        font-size: 5px;
+    }
+    .symbols-on-the-map{
+        margin-bottom: 20px; 
+    }
+    .inf{
+        margin: 0%;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    #your_pass{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    #your_pass_info{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    #qrcode{
+        /* width: 100px; */
+        
+    }
+}

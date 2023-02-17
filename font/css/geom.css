@@ -53,17 +53,7 @@ h3{
     color: #555;
 }
 
-.buy_btn{
-    background-color: #00d732;
-    border: 0px;
-    height: 100px;
-    width: 350px;
-    border-radius: 15px;
-    color: #ffffff;
-    font: 20px sans-serif;
-    opacity: 0.9;
 
-}
 
 .centerdiv{
     display: flex;
@@ -117,12 +107,8 @@ h3{
 #parc_vertical_arrow{
     width: 10px;
 }
-#see{
-    font-size: 70px; 
-}
-#text{
-    font-size: 40px;
-}
+
+
 .cell_color{
     width: 40px;
     height: 20px;
@@ -131,44 +117,5 @@ h3{
     margin-bottom: 5px;
 }
 
-#free-place{
-    background-color: #555;
-}
-#selected-place{
-    background-color: green;
-}
-#booked-place{
-    background-color: #bd0202;
-}
-.arrow-symbol{
-    width: 40px;
-    height: 10px;
-    background-color: blue;
-    margin-top: 5px;
-    margin-right: 2%;
-}
 
-.sym{
-    margin: 0%;
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-.symbols-on-the-map{
-    margin-bottom: 50px; 
-}
-.inf{
-    margin: 0%;
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-#your_pass{
-    font-size: 35px;
-    margin-bottom: 0px;
-}
-#your_pass_info{
-    font-size: 25px;
-    margin-top: 0px;
-}
-#qrcode{
-    width: 250px;
-}
+
