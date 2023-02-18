@@ -2,37 +2,12 @@ body{
     margin: 0%;
 }
 
-.parc_cell{
-    float: left;
-    vertical-align: middle;
-    height: 100px;
-    width: 50px;
-    color: white;
-    background-color: #555;
-    border: 0px solid #000;
-    margin: 10px;
-    text-align: center;
-    
-}
+.header{
+    width: 100%;
+    height: 10%;
 
-.parc_row{
-    height: 120px;
-    width: 700px;
-    min-width: 700px;
-    display:block;
-    border: 0px solid rgb(255, 0, 0);
-}
-
-.arrow_row{
-    height: 100px;
-    
-}
-
-.parc_inout{
-    font-size: 25px;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    margin-right: 20px;
+    position: sticky;
+    top: -1px;
 }
 
 .wrap {
@@ -44,78 +19,13 @@ body{
     flex-direction: row;
  }
 
-
-
-
-
-h3{
-    font: 50px sans-serif;
-    color: #555;
-}
-
-
-
 .centerdiv{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.parc_map{
-    border:5px solid #000;
-    align-items: none;
-    min-width: 900px;
-    background-color: white;
+h3{
+    font: 50px sans-serif;
+    color: #555;
 }
-
-.parc_vertical_arrow{
-    height: 580px;
-    width: 100px;
-    margin: 0px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.parc_horizontal_arrow{
-    text-align: center; /* Выравниваем текст по центру */
-    border-top: 10px dashed blue; /* Параметры линии  */
-    height: 18px; /* Высота блока */
-    background: no-repeat 10px -18px; /* Параметры фона */
-}
-#cell_number{
-    user-select: none;
-}
-
-#parc{
-    width: 700px;
-}
-
-#parc_horizontal_arrow_u1{
-    height: 45%;
-}
-#parc_horizontal_arrow_d1{
-    margin-top: 10px;
-    height: 45%;
-}
-#parc_horizontal_arrow_u2{
-    height: 45%;
-}
-#parc_horizontal_arrow_d2{
-    margin-top: 10px;
-    height: 45%;
-}
-#parc_vertical_arrow{
-    width: 10px;
-}
-
-
-.cell_color{
-    width: 40px;
-    height: 20px;
-    background-color: aqua;
-    margin-right: 2%;
-    margin-bottom: 5px;
-}
-
-
-
