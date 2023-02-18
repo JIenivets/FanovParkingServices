@@ -1,0 +1,58 @@
+.main{
+    height: 80vh;
+}
+
+.singupblock{
+    width: 80%;
+    height: 50%;
+    /* margin-bottom: 35%; */
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.singup-text{
+    margin: 0px;
+}
+
+.inputblock{
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.singup-square{
+    text-align: center;
+    border: 2px solid #00d830;
+    height: 25px;
+    width: 300px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.singup-button{
+    height: 40px;
+    background-color: #00d830;
+    color: rgb(255, 255, 255);
+    font: 18px sans-serif;
+    width: 307.2px;
+    margin-top: 15px;
+}
+
+#regions{
+    height: 30px;
+    width: 307.2px;
+}
+
+
+
+form{
+    margin: 0 auto;
+    width: 400px;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24444f3d;
+    border-radius: 20px;
+}

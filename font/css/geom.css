@@ -1,5 +1,6 @@
 body{
-    margin: 0%;
+    margin: 0px;
+    background-color: #ebfbe1;
 }
 
 .parc_cell{
@@ -53,16 +54,17 @@ h3{
     color: #555;
 }
 
-.buy_btn{
+.site-button{
     background-color: #00d732;
     border: 0px;
-    height: 100px;
-    width: 350px;
-    border-radius: 15px;
-    color: #ffffff;
-    font: 20px sans-serif;
-    opacity: 0.9;
+    border-radius: 20px;
+    color: white;
+}
 
+.site-button:hover{
+    border: 3px solid #00d732;
+    background-color: white;
+    color: #00d732;
 }
 
 .centerdiv{
