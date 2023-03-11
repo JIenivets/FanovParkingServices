@@ -1,5 +1,5 @@
 
-fetch("/font/assets/header.html")
+fetch("https://jienivets.github.io/FanovParkingServices/font/assets/header.html")
   .then(response => {
     return response.text()
   })
