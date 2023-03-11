@@ -65,17 +65,17 @@ p{
     font-size: 1em;
 }
   
-.welcombutton{
-    color: white;
-    background-color: #00d732;
-    border: 0px;
-    border-radius: 18px;
+.buybutton{
     width: 180px;
     height: 40px;
     margin-bottom: 30px;
 }
 
-.welcombutton-text{
+.buybutton:hover{
+    border: 2px;
+}
+
+.buybutton-text{
     margin: 0;
     font: 15px sans-serif;
     user-select: none;

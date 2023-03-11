@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="/font/css/header.css">
-	<link rel="stylesheet" href="/font/css/geom.css">
+    <link rel="stylesheet" href="../font/css/header.css">
+	<link rel="stylesheet" href="../font/css/geom.css">
 
 </head>
 <body>
     <header class="headerblock">
         <div class="row" onclick="location.href='/'" style="cursor: pointer;">
             <img class='headerlogo' src="https://jienivets.github.io/FanovParkingServices/font/assets/img/fps_logo__carx5v2.png" alt="FPS_logo">
-            <div class="headername">Fanov Parking Services</div>
+            <div class="headername" id="headername">Fanov Parking Services</div>
         </div>  
         <div class="menu">
-            <div class="menu-button parcing-menu-button" onclick="location.href='./pages/parcing.html'"><h3 class="menubutton-text">Список парковок</h3></div>
-            <div class="menu-button singin-menu-button" onclick="location.href='#'"><h3 class="menubutton-text">Войти</h3></div>
+            <div class="menu-button parcing-menu-button" onclick="location.href='../pages/parcing.html'"><h3 class="menubutton-text">Список парковок</h3></div>
+            <div class="menu-button singin-menu-button" onclick="location.href='../pages/singin.html'"><h3 class="menubutton-text">Войти</h3></div>
         </div>
         <div class="mobile-menu">
             <span class="material-symbols-outlined mobile-menu-icon" onclick="document.getElementById('menu-list-square').style.display = 'flex';console.log('Меню открыто')">menu</span>
@@ -26,7 +26,7 @@
                 <div class="menu-list">
                     <span class="material-symbols-outlined mobile-menu-icon menu-close" onclick="document.getElementById('menu-list-square').style.display = 'none';console.log('Меню закрыто')">close</span>
                     <div class="menu-button parcing-menu-button" onclick="location.href='./pages/parcing.html'"><h3 class="menubutton-text">Список парковок</h3></div>
-                    <div class="menu-button singin-menu-button" onclick="location.href='#'"><h3 class="menubutton-text">Войти</h3></div>
+                    <div class="menu-button singin-menu-button" onclick="location.href='../pages/singin.html'"><h3 class="menubutton-text">Войти</h3></div>
                 </div>
             </div>
         </div>

@@ -112,14 +112,9 @@
 }
 
 .buy_btn{
-    background-color: #00d732;
-    border: 0px;
     height: 70px;
     width: 200px;
-    border-radius: 15px;
-    color: #ffffff;
     font: 20px sans-serif;
-    opacity: 0.9;
 
 }
 
