@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://jienivets.github.io/FanovParkingServices/font/css/geom.css">
+	<link rel="shortcut icon" href="https://jienivets.github.io/FanovParkingServices/font/assets/img/fps_logo__carx5v2.png">
+    <link rel="stylesheet" href="https://jienivets.github.io/FanovParkingServices/font/css/sing.css">
+    <script src="https://jienivets.github.io/FanovParkingServices/js/header.js"></script>
+    <title id="title">Вход</title>
+</head>
+<body>
+    <header class="header"></header>
+    <div class="content">
+        <div class="sing-block">
+            <div class="left">
+                <img class='leftlogo' src="https://jienivets.github.io/FanovParkingServices/font/assets/img/fps_logo__carx5v2.png" alt="" srcset="">
+            </div>
+            <div class="right">
+                <div class="sing-menu">
+                    <h3 class="sing-menu-test" id="in" onclick="switchsing('in')">Войти</h3>
+                    <h3 class="sing-menu-test" id="nu">|</h3>
+                    <h3 class="sing-menu-test" id="up" onclick="switchsing('up')">Регистрация</h3>
+                </div>
+                <form action="https://jienivets.github.io/FanovParkingServices/pages/profile.html" class="sing-content" id="sing-form">
+                    <input type="text" class="input-square" name="login" id="input-square-log" placeholder="логин">
+                    <input type="text" class="input-square" name="password" id="input-square-pass" placeholder="пароль">
+                    <button class="site-button enterregbtn">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script  type="text/javascript">
+    let title = document.getElementById('title')
+    let sing_form = document.getElementById('sing-form')
+    let sing_up_form = "<input type='text' class='input-square' name='login' id='input-square-log' placeholder='придумайте логин'><input type='text' class='input-square' name='password' id='input-square-passs' placeholder='придумайте пароль'><div class='password-status-box'><h3 class='password-status'>*пароль подходит</h3></div><select class='input-square' name='regions' id='regions'><option value='Липецкая обл.'> Липецкая область</option></select><button class='site-button enterregbtn'>Зарегистрироваться</button>"
+    let sing_in_form = sing_form.innerHTML
+    
+    function switchsing(mode) {
+        if (mode == 'up'){
+            console.log(mode)
+            sing_form.innerHTML = sing_up_form
+            title.innerHTML = 'Регистрация'
+        }
+
+        if (mode == 'in'){
+            console.log(mode)
+            sing_form.innerHTML = sing_in_form  
+            title.innerHTML = 'Вход'
+        }
+        
+    }
+</script>

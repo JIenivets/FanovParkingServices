@@ -1,69 +1,175 @@
-.main{
-    height: 80vh;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+body{
+    min-height: 950px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #72df8c, #e3eb88);
+    
 }
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.sing-block{
+    margin-top: 200px;
+    border: 4px solid white;
+    border-radius: 20px;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+}
+.left, .right{
+    height: 100%;
+    width: 50%;
+    
+}
+.left{
+    background-image: url(https://jienivets.github.io/FanovParkingServices/font/assets/img/bgim.jpg);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.2);
 
-.singblock{
-    width: 80%;
-    height: 50%;
-    /* margin-bottom: 35%; */
+    
+}
+#input-square-log, #input-square-pass{
+        width: 80%;
+        border-radius: 10px;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+.sing-menu{
+    height: 30%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sing-content{
+    display: flex;
+    /* justify-content: center; */
     flex-direction: column;
-    margin: 0 auto;
+    align-items: center;
+
+    height: 70%;
 }
-
-.sing-text{
-    margin: 0px;
-}
-
-.inputblock{
-    display: grid;
-    grid-template-columns: repeat(1, 500px);
-    grid-template-rows: repeat(4, 100px);
-}
-
-
-.sing-button{
-    height: 40px;
-    font: 18px sans-serif;
-    width: 307.2px;
-}
-
-.a-singup{
-    font: 16px sans-serif;
-    color: #555;
-    text-align: center;
-}
-
-.a-singup:hover{
-    font: 18px sans-serif;
-    color: white;
+.leftlogo{
+    width: 75%;
 }
 
 #regions{
+    font-family: 'Montserrat Alternates', sans-serif;
+    height: 31px;
+    width: 82%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.sing-menu-test{
+    font-family: 'Montserrat Alternates', sans-serif;
     height: 30px;
-    width: 307.2px;
+    margin: 0%;
+    font-size: 30px;
+    padding: 6px;
+    padding-top: 30px;
 }
-
-.in{
-    grid-template-rows: 150px 45px 45px 35px 50px;
+.site-button{
+    font-family: 'Montserrat Alternates', sans-serif;
 }
-
-.up{
-    grid-template-rows: 150px 45px 45px 45px 70px;
+.enterregbtn{
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
 }
+.password-status-box{
+    width: 80%;
+    display: flex;
 
-h3{
-    text-align: center;
 }
+.password-status{
+    margin: 0px;
 
-form{
-    margin: 0 auto;
-    width: 400px;
-    height: 450px;
-
-    display: grid;
-    grid-template-columns: 1;
-    align-items: center;
-    justify-content: center;
-    background-color: #24444f3d;
-    border-radius: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    color: #005112;
+}
+#in, #nu, #up{
+    color: #2a4c52;
+}
+#in:hover, #up:hover{
+    color: white;
+    text-shadow: 1px 0 1px #838383, 
+                0 1px 1px #838383, 
+                -1px 0 1px #838383, 
+                0 -1px 1px #838383;
+}
+#input-square-log{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#input-square-pass{
+    margin-bottom: 50px;
+}
+#input-square-passs{
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 500px) {
+    #in, #nu, #up{
+        font-size: 25px;
+    }
+    .sing-block{
+        flex-direction: column;
+        width: 90%;
+        height: 700px;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .leftlogo{
+        width: 65%;
+    }
+    .left{
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .right{
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    #input-square-log{
+        margin-top: 20px;
+    }
+    #input-square-pass{
+        margin-bottom: 30px;
+    }
+    #input-square-passs{
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 0px;
+    }
+    #regions{
+        width: 92%;
+    }
+    #input-square-log, #input-square-pass{
+        width: 90%;
+    }
+    .enterregbtn{
+        width: 90%;
+    }
+    .password-status-box{
+        margin-bottom: 10px;
+    }
 }
